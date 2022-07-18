@@ -1,0 +1,2 @@
+export const FETCH_MODULE_OPTIONS = Symbol('FETCH_MODULE_OPTIONS')
+export const DEFAULT_TIMEOUT = 2000
