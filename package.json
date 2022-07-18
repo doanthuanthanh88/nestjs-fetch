@@ -1,5 +1,5 @@
 {
-  "name": "@doan-thuan-thanh/nestjs-fetch",
+  "name": "@open-sources/nestjs-fetch",
   "version": "0.0.1",
   "description": "Fetch module for nestJS",
   "author": "Đoàn Thuận Thành",
