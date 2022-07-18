@@ -1,6 +1,6 @@
 {
-  "name": "@open-sources/nestjs-fetch",
-  "version": "0.0.1",
+  "name": "@opensrc/nestjs-fetch",
+  "version": "0.0.2",
   "description": "Fetch module for nestJS",
   "author": "Đoàn Thuận Thành",
   "license": "UNLICENSED",
@@ -13,7 +13,11 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "publish": "npm publish dist"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0"
@@ -66,5 +70,18 @@
   },
   "dependencies": {
     "lodash.merge": "^4.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doanthuanthanh88/nestjs-fetch.git"
+  },
+  "keywords": [
+    "nestjs",
+    "fetch",
+    "http client"
+  ],
+  "bugs": {
+    "url": "https://github.com/doanthuanthanh88/nestjs-fetch/issues"
+  },
+  "homepage": "https://github.com/doanthuanthanh88/nestjs-fetch#readme"
 }

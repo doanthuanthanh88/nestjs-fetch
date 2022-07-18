@@ -11,7 +11,7 @@ Fetch module for nestJS which provide request to http(s) server
 ## Installation
 
 ```sh
-  npm install @open-sources/nestjs-fetch
+  npm install @opensrc/nestjs-fetch
 ```
 
 ## Example
@@ -20,9 +20,9 @@ In `book.module.ts`
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { FetchFactory, FetchModule } from '@open-sources/nestjs-fetch';
-import { NodeFetchService } from '@open-sources/nestjs-fetch/services/node-fetch/node-fetch.service';
-import { FetchService } from '@open-sources/nestjs-fetch/services/fetch/fetch.service';
+import { FetchFactory, FetchModule } from '@opensrc/nestjs-fetch';
+import { NodeFetchService } from '@opensrc/nestjs-fetch/services/node-fetch/node-fetch.service';
+import { FetchService } from '@opensrc/nestjs-fetch/services/fetch/fetch.service';
 import { BookProvider } from './book.provider'
 
 @Module({
@@ -70,8 +70,8 @@ In `book.provider.ts`
 
 ```typescript
 import { Inject, Injectable } from '@nestjs/common';
-import { FetchService } from '@open-sources/nestjs-fetch/services/fetch/fetch.service';
-import { NodeFetchService } from '@open-sources/nestjs-fetch/services/node-fetch/node-fetch.service';
+import { FetchService } from '@opensrc/nestjs-fetch/services/fetch/fetch.service';
+import { NodeFetchService } from '@opensrc/nestjs-fetch/services/node-fetch/node-fetch.service';
 
 @Injectable()
 class BookProvider {
